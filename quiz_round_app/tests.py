@@ -28,7 +28,7 @@ class AnswerTestCase(TestCase):
         question = Question.objects.get(title="what is json?")
         answers = Answer.objects.filter(question=question)
         for answer in answers:
-            self.assertIsNotNone(answer.question, msg="question available")
+            self.assertIsNotNone(answer.question, msg="question available in database.")
             self.assertEquals(answer.question.title, question.title)
 
     def test_user_present_for_answer(self):
@@ -36,4 +36,4 @@ class AnswerTestCase(TestCase):
         question = Question.objects.get(title="what is json?")
         answers = Answer.objects.filter(question=question)
         for answer in answers:
-            self.assertIsNotNone(answer.user, msg="User available")
+            self.assertIsNotNone(answer.user, msg="User available in database.")
