@@ -40,7 +40,7 @@ apis
         params - username, password - Pass these parameters in body eg. {"username" : "firoj", "password" : "neosoft@123"}
 
     Get questions
-        url - /questions
+        url - /api/questions
         method - GET
         headers - token, api-key - pass these parameters in header section
         params - q (optional)
