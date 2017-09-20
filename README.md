@@ -28,9 +28,9 @@ Demo accounts
 
     username- nikhil, password- neosoft@123
 
-    tanant- TCS, api-key - 23cb00a63d7945eba0ff5b846de1b728
+    tanant- TCS, api-key - 3c1a5d88ac914da6a92e860789453779
 
-    tenant- Accenture, api-key - 3c1a5d88ac914da6a92e860789453779
+    tenant- Accenture, api-key - 23cb00a63d7945eba0ff5b846de1b728
 
 apis
 
