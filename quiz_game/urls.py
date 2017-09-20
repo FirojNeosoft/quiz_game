@@ -1,4 +1,4 @@
-"""quiz_game URL Configuration
+"""quiz_test URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -13,9 +13,24 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+
 from django.contrib import admin
+from django.conf.urls import url, include
+from django.contrib.auth.models import User
+
+from rest_framework import routers
+from rest_framework.authtoken import views
+
+from quiz_round_app.api.viewsets import QuestionViewSet
+from quiz_round_app.views import DashboardView
+
+router = routers.DefaultRouter()
+router.register(r'questions', QuestionViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^api/', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^api-token-auth/', views.obtain_auth_token),
+    url(r'^$', DashboardView.as_view()),
 ]

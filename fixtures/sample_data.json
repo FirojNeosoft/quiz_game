@@ -1,0 +1,213 @@
+[
+
+    { "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "firoj",
+            "password": "neosoft@123"
+        }
+    },
+    { "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "rushi",
+            "password": "neosoft@123"
+        }
+    },
+    { "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "sagar",
+            "password": "neosoft@123"
+        }
+    },
+    { "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "nikhil",
+            "password": "neosoft@123"
+        }
+    },
+      {
+    "model": "quiz_round_app.Question",
+    "pk": 1,
+    "fields": {
+      "title": "What is iframe?",
+      "is_private": 0,
+      "user":1
+    }
+  },
+  {
+    "model": "quiz_round_app.Question",
+    "pk": 2,
+    "fields": {
+      "title": "What is ROR??",
+      "is_private": 1,
+      "user":3
+    }
+  },
+  {
+    "model": "quiz_round_app.Question",
+    "pk": 3,
+    "fields": {
+      "title": "What is AWT in java?",
+      "is_private": 0,
+      "user":2
+    }
+
+  },
+  {
+    "model": "quiz_round_app.Question",
+    "pk": 4,
+    "fields": {
+      "title": "Who is PM of India?",
+      "is_private": 0,
+      "user":2
+    }
+  },
+    {
+    "model": "quiz_round_app.Question",
+    "pk": 5,
+    "fields": {
+      "title": "What is CM of Maharashtra?",
+      "is_private": 0,
+      "user":4
+    }
+  },
+  {
+    "model": "quiz_round_app.Question",
+    "pk": 6,
+    "fields": {
+      "title": "Is python a case sensitive language?",
+      "is_private": 1,
+      "user":3
+    }
+  },
+  {
+    "model": "quiz_round_app.Question",
+    "pk": 7,
+    "fields": {
+      "title": "What are the supported data types in Python?",
+      "is_private": 0,
+      "user":2
+    }
+
+  },
+  {
+    "model": "quiz_round_app.Question",
+    "pk": 8,
+    "fields": {
+      "title": "What is REST framework in python?",
+      "is_private": 0,
+      "user":2
+    }
+  },
+    {
+    "model": "quiz_round_app.Question",
+    "pk": 9,
+    "fields": {
+      "title": "What is the output of print str[0] if str = 'Hello World!'?",
+      "is_private": 0,
+      "user":1
+    }
+  },
+    {
+    "model": "quiz_round_app.Answer",
+    "pk": 1,
+    "fields": {
+      "body": "Internal frame for css.",
+      "question": 1,
+      "user":1
+    }
+  },
+  {
+    "model": "quiz_round_app.Answer",
+    "pk": 2,
+    "fields": {
+      "body": "Ruby On Rails.",
+      "question": 2,
+      "user":3
+    }
+  },
+  {
+    "model": "quiz_round_app.Answer",
+    "pk": 3,
+    "fields": {
+      "body": "AWT is a framework to create UI in java. ",
+      "question": 3,
+      "user":2
+    }
+
+  },
+  {
+    "model": "quiz_round_app.Answer",
+    "pk": 4,
+    "fields": {
+      "body": " Modi. ",
+      "question": 4,
+      "user":2
+    }
+  },
+    {
+    "model": "quiz_round_app.Answer",
+    "pk": 5,
+    "fields": {
+      "body": "Devendra.",
+      "question": 5,
+      "user":4
+    }
+  },
+  {
+    "model": "quiz_round_app.Answer",
+    "pk": 6,
+    "fields": {
+      "body": "It is used in Windows to instruct Python to find the first case-insensitive match in an import statement.",
+      "question": 6,
+      "user":3
+    }
+  },
+  {
+    "model": "quiz_round_app.Answer",
+    "pk": 7,
+    "fields": {
+      "body": "It is an alternative module search path.",
+      "question": 7,
+      "user":2
+    }
+
+  },
+  {
+    "model": "quiz_round_app.Answer",
+    "pk": 8,
+    "fields": {
+      "body": "DJangoRestFramework",
+      "question": 8,
+      "user":2
+    }
+  },
+    {
+    "model": "quiz_round_app.Answer",
+    "pk": 9,
+    "fields": {
+      "body": "Python has five standard data types −Numbers,String,List,Tuple",
+      "question": 9,
+      "user":1
+    }
+  },
+  {
+    "model": "quiz_round_app.Tenant",
+    "pk": 1,
+    "fields": {
+      "name": "TCS",
+      "api_key": "3c1a5d88ac914da6a92e860789453779"
+    }
+  },
+  {
+    "model": "quiz_round_app.Tenant",
+    "pk": 2,
+    "fields": {
+      "name": "Accenture",
+      "api_key": "23cb00a63d7945eba0ff5b846de1b728"
+    }
+  }
+]
